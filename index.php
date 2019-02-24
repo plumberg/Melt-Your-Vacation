@@ -20,9 +20,10 @@ and open the template in the editor.
           
         <div class="jumbotron header-menu" name="header-menu">
         <?php include 'header.php';?>
-        
+                    </div>
 
-        </div>
+
+
     
         <div class="page-footer">
         <?php include 'footer.php';?>

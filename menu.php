@@ -1,24 +1,3 @@
-<!--
-<div class="body-wrap">
-
-    <nav class="navbar-inverse" role="navigation">
-      <div class="container-fluid">
-          <ul class="nav navbar-nav">
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About</a></li>
-            <li class="dropdown">
-              <a href="#" class="dropdown-toggle" data-toggle="dropdown">Menu <b class="caret"></b></a>
-              <ul class="dropdown-menu">
-                <li><a href="#">1</a></li>
-                <li><a href="#">2</a></li>
-                <li><a href="#">3</a></li>
-              </ul>
-            </li>
-          </ul>
-      </div>
-    </nav>
-</div>
--->
 <div id="mySidebar" class="sidebar">
   <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
   <a href="#">About</a>
@@ -27,12 +6,25 @@
   <a href="#">Contact</a>
 </div>
 
-<div id="main">
 
-  <button class="openbtn" style="width:100%" onclick="openNav()">&#9776; See Menu</button> 
-  <h2>Melt Your Vacation</h2>
-  <p>Find your adventure now...</p>
+   
+  <div id="main">
+      
+        <button class="openbtn" style="width:100%" onclick="openNav()">&#9776; See Menu</button>        
+        
+         <div id="name">
+        <h2>Melt Your Vacation</h2>
+                    </div>
 </div>
+        <div id="logo">
+            <p>Find your adventure now...
+            <IMG SRC="logo.png" ALT="logo" WIDTH=140 HEIGHT=140>
+                </p>
+        </div>
+
+
+
+
 
 <script>
 function openNav() {

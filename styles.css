@@ -68,4 +68,18 @@ body {
 
 .header-menu{
     background-image: url('ski.jpg');
+        height:523px;
+}
+
+#main{
+
+}
+
+#logo{
+    position: absolute;
+    right: 30px;
+}
+
+#name{
+    position: absolute;
 }
