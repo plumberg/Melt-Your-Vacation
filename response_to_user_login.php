@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+
 <?php
 session_start();
 $logins = array(
@@ -7,29 +7,17 @@ $logins = array(
     'rooster' => 'goodMorning',
 );
 
-
-?>
-<html>
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="styles.css">
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
-	<title>My Account</title>
-    </head>
-    <body>
-        <div class="jumbotron header-menu" name="header-menu">
-            <?php include 'header.php';?>
-           
-        </div>
-        <h3>
-             <?php 
-            if(isset($_SESSION['name'])) {
-            echo 'Hello, '. $_SESSION['name'];
+ foreach ($logins as $key=>$value)
+        {
+            if ($key === $_SESSION['name'] && $value === $_SESSION['password']){
+            $_SESSION['LoggedIn'] = true;
+            setcookie('cookieName', $_SESSION['name'], time() + 4800);
             }
-            ?>
-        </h3>
-    </body>
-</html>
+            else 
+                {
+                $_SESSION['LoggedIn'] = false;
+                }
+        }
+        
+  include 'contents_of_user_login.php';      
+?>
