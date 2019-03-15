@@ -1,9 +1,14 @@
 <!DOCTYPE html>
-<!--
-To change this license header, choose License Headers in Project Properties.
-To change this template file, choose Tools | Templates
-and open the template in the editor.
--->
+<?php
+session_start();
+$logins = array(
+    'hamster' => 'hamster1',
+    'kitten' => 'cat2008',
+    'rooster' => 'goodMorning',
+);
+
+
+?>
 <html>
     <head>
         <meta charset="UTF-8">
@@ -12,19 +17,19 @@ and open the template in the editor.
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
-        <title>Melt Your Vacation</title>
+	<title>My Account</title>
     </head>
-    <!--
-    I included bootstrap features. The header contains menu with is a side bar. Besides that added background picture
-    -->
-          
+    <body>
         <div class="jumbotron header-menu" name="header-menu">
             <?php include 'header.php';?>
+           
         </div>
-
-
-
-    
-        <div class="page-footer">
-            <?php include 'footer.php';?>
-        </div>    
+        <h3>
+             <?php 
+            if(isset($_SESSION['name'])) {
+            echo 'Hello, '. $_SESSION['name'];
+            }
+            ?>
+        </h3>
+    </body>
+</html>

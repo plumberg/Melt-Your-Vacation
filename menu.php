@@ -3,7 +3,7 @@
   <a href="#">About</a>
   <a href="#">Services</a>
   <a href="#">Clients</a>
-  <a href="#">Contact</a>
+  <a href="contact_login.php">Contact</a>
 </div>
 
 
@@ -12,18 +12,17 @@
       
         <button class="openbtn" style="width:100%" onclick="openNav()">&#9776; See Menu</button>        
         
-         <div id="name">
-        <h2>Melt Your Vacation</h2>
-                    </div>
-</div>
-        <div id="logo">
+        <div id="name">
+            <h2>Melt Your Vacation</h2>
+        </div>
+   </div>
+       
+
+    <div id="logo">
             <p>Find your adventure now...
             <IMG SRC="logo.png" ALT="logo" WIDTH=140 HEIGHT=140>
                 </p>
-        </div>
-
-
-
+    </div>
 
 
 <script>

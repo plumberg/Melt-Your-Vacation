@@ -71,10 +71,6 @@ body {
         height:523px;
 }
 
-#main{
-
-}
-
 #logo{
     position: absolute;
     right: 30px;
@@ -82,4 +78,8 @@ body {
 
 #name{
     position: absolute;
+}
+
+form {
+  text-align: center;
 }
