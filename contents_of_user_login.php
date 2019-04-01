@@ -1,12 +1,4 @@
 <!DOCTYPE html>
-<?php
-if($_SESSION['LoggedIn'] === true) {
-            echo 'Hello, '. $_SESSION['name'];
-            }
-
-
-?>
-
 <html>
     <head>
         <meta charset="UTF-8">
@@ -22,12 +14,21 @@ if($_SESSION['LoggedIn'] === true) {
             <?php include 'header.php';?>
            
         </div>
+                     <td width='80' style='text-align:center;'>
         <h3>
+
              <?php 
-            if($_SESSION['LoggedIn'] === true) {
-            echo 'Hello, '. $_SESSION['name'];
+
+            if($_SESSION['LoggedIn'] == true) {
+            echo 'Welcome, '. $_COOKIE['cookieName'];
             }
+            		else
+{   
+echo 'Login not recognized. <a href="contact_login.php">Please login again</a>.' ;
+}
             ?>
         </h3>
+                                          </td>
+
     </body>
 </html>

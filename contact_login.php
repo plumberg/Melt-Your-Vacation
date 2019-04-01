@@ -1,9 +1,5 @@
 <?php
-	if(isset($_POST['submit'])){
-		session_start();
-		$_SESSION['name'] = htmlentities($_POST['name']);
-		$_SESSION['password'] = htmlentities($_POST['password']);	
-	}
+
 ?>
 <!DOCTYPE html>
 <html>
@@ -24,9 +20,10 @@
         <form method="POST" action="<?php echo $_SERVER['PHP_SELF']; ?>">
 		<input type="text" name="name" placeholder="Enter Login">
 		<br>
-		<input type="text" name="password" placeholder="Enter Password">
+                <input type="password" name="password" placeholder="Enter Password">
 		<br>
-		<input type="submit" formaction="response_to_user_login.php" name="submit" value="Submit">
+		<!-- <input type="submit"  name="submit" value="Submit">-->
+               <input type="submit" formaction="response_to_user_login.php" name="submit" value="Submit">
 	</form>
 
 </body>
