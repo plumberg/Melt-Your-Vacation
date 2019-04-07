@@ -1,7 +1,7 @@
 <?php
 session_start();
 session_destroy();
-if(isset $_COOKIE['cookieName']){
+if(isset($_COOKIE['cookieName'])){
  unset ($_COOKIE['cookieName']);
  setcookie('cookieName', '', time() - 4800, '/');
 }
