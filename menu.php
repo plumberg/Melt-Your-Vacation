@@ -10,11 +10,12 @@
    
   <div id="main">
       
-        <button class="openbtn" style="width:100%" onclick="openNav()">&#9776; See Menu</button>        
-        
+        <button class="openbtn" style="width:100%" onclick="openNav()">&#9776; Melt Your Vacation Menu</button>        
+       <!-- 
         <div id="name">
             <h2>Melt Your Vacation</h2>
         </div>
+       -->
    </div>
        
 
