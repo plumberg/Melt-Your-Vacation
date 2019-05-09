@@ -26,7 +26,7 @@
         <input type="password" name="password" placeholder="Enter Password">
 		<br>
 		<!-- <input type="submit"  name="submit" value="Submit">-->
-        <input type="submit" formaction="response_to_user_login.php" name="submit" value="Submit">
+        <input type="submit" formaction="response_to_user_login.php" name="submit" value="Enter">
 	</form>
 
 </body>

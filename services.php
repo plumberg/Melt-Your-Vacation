@@ -25,7 +25,7 @@
     <h3>Our trip categories:</h3>
     <div class ="d-flex flex-wrap">
         <?php  while($row=$result->fetch_array(MYSQLI_ASSOC)){?>
-            <!-- The code of cards were taken from free bootstrap samples -->
+            <!-- The code of cards was taken from free bootstrap samples -->
             <div class="card mb-4 shadow-sm">
               <div class="card-header">
                 <h4 class="my-0 font-weight-normal">Price starting from:</h4>
