@@ -4,7 +4,10 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="styles.css">
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+<!--    Old Bootstrap:
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+-->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
 	<title>My Account</title>
@@ -26,6 +29,9 @@
               // echo 'Welcome, '. $_COOKIE['cookieName'].'<br>';
                 echo 'Welcome, ' . $_SESSION['name'].'<br>';
                 echo '<a href="logout.php">Logout</a>';
+
+                //Then should display all the data in the database table which
+                //is used to save web-submitted-information on the web (e.g. orders).
                 }
             else{
                 echo 'Login not recognized.<br><a href="contact_login.php">Please login again</a>.' ;
