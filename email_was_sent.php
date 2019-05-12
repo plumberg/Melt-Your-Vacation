@@ -10,21 +10,16 @@
 -->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
-	<title>Log In - Melt Your Vacation</title>
+	<title>Contact Us - Melt Your Vacation</title>
 </head>
 <body>
         <?php include 'header.php';?>
-
-
-        <form class="form-signin" method="POST" action="<?php echo $_SERVER['PHP_SELF']; ?>">
-		<input type="text" name="name" placeholder="Enter Login">
-		<br>
-        <input type="password" name="password" placeholder="Enter Password">
-		<br>
-		<button class="btn btn-lg btn-primary" type="submit" formaction="response_to_user_login.php">Sign in</button>
-        <!--<input type="submit" formaction="response_to_user_login.php" name="submit" value="Enter">-->
-    	</form>
-
-    <div class="page-footer">
-        <?php include 'footer.php';?>
+<div class="container mt-5">
+    <div class ="d-flex justify-content-center">
+        <h4 class = "mb-5">Thank you. The message was sent successfully!</h2>
     </div>
+</div>
+
+<div class="page-footer">
+    <?php include 'footer.php';?>
+</div>
