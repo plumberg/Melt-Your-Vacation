@@ -1,6 +1,7 @@
 <!-- new header is copied from the bootstrap free samples -->
 <div class="d-flex flex-column flex-md-row align-items-center p-3 px-md-4 mb-3 bg-white border-bottom shadow-sm">
-  <h5 class="my-0 mr-md-auto font-weight-bold">Melt Your Vacation</h5>
+  <!--<h5 class="my-0 mr-md-auto font-weight-bold">Melt Your Vacation</h5>-->
+  <img src="img/logoName.png" class="my-0 mr-md-auto">
   <nav class="my-2 my-md-0 mr-md-3">
     <a class="p-2 text-dark" href="#">About</a>
     <a class="p-2 text-dark" href="services.php">Services</a>

@@ -17,7 +17,7 @@
 
     <?php
              require('config/db_conn.php');
-             $query = "SELECT TC_desc, TC_min_price, TC_img FROM trip_categories";
+             $query = "SELECT TC_desc, TC_min_price FROM trip_categories";
              $result = $conn->query($query);
     ?>
 
@@ -36,12 +36,14 @@
                 <h4 class="my-0 font-weight-normal"><?php echo $row['TC_desc']?> Tours</h4>
               </div>
               <div class="card-body">
+                  <form action="<?php echo $count?>_tour.php" method="post">
                   <img src="img/<?php echo $count; $count++?>.jpg" class ="img-thumbnail">
                   <ul class="list-unstyled mt-3 mb-4">
                     Price starting from:
                   </ul>
                 <h1 class="card-title pricing-card-title">$ <?php echo $row['TC_min_price']?></h1>
-                <button type="button" class="btn btn-lg btn-block btn-outline-primary">Select</button>
+                <button type="submit" class="btn btn-lg btn-block btn-outline-primary">Select</button>
+            </form>
               </div>
             </div>
         </div>

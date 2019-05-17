@@ -1,4 +1,14 @@
-.card {
-    width: 32% !important;
-    margin-left: 1% !important;
+#wrapper{
+    width: 1170px;
+    margin: 0 auto;
+}
+
+img{
+    width: 100%;
+}
+
+/*styles for imgae slider*/
+.main{
+    max-width: 700px;
+    margin: 20 px auto;
 }
