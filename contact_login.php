@@ -19,12 +19,12 @@
                     <h1 class="h3 mb-3 font-weight-bold">Log In to your account:</h1>
                 </div>
 
-                <div class="form-label-group">
+                <div class="form-label-group mb-3">
                     <label>Login</label>
                     <input type="text" name="name" class="form-control" placeholder="Enter Login">
                 </div>
 
-                <div class="form-label-group">
+                <div class="form-label-group mb-3">
                     <label>Password</label>
                     <input type="password" name="password" placeholder="Enter Password" class="form-control">
                 </div>

@@ -31,22 +31,22 @@
             <!-- The code of cards was taken from free bootstrap sample examples -->
             <!--https://getbootstrap.com/docs/4.0/utilities/spacing/-->
             <div class ="card-deck mb-3 text-center">
-            <div class="card mb-4 shadow-sm">
-              <div class="card-header">
-                <h4 class="my-0 font-weight-normal"><?php echo $row['TC_desc']?> Tours</h4>
-              </div>
-              <div class="card-body">
-                  <form action="<?php echo $count?>_tour.php" method="post">
-                  <img src="img/<?php echo $count; $count++?>.jpg" class ="img-thumbnail">
-                  <ul class="list-unstyled mt-3 mb-4">
-                    Price starting from:
-                  </ul>
-                <h1 class="card-title pricing-card-title">$ <?php echo $row['TC_min_price']?></h1>
-                <button type="submit" class="btn btn-lg btn-block btn-outline-primary">Select</button>
-            </form>
-              </div>
+                <div class="card mb-4 shadow-sm">
+                    <div class="card-header">
+                        <h4 class="my-0 font-weight-normal"><?php echo $row['TC_desc']?> Tours</h4>
+                    </div>
+                    <div class="card-body">
+                        <form action="<?php echo $count?>_tour.php" method="post">
+                            <img src="img/<?php echo $count; $count++?>.jpg" class ="img-thumbnail">
+                            <ul class="list-unstyled mt-3 mb-4">
+                                Price starting from:
+                            </ul>
+                            <h1 class="card-title pricing-card-title">$ <?php echo $row['TC_min_price']?></h1>
+                            <button type="submit" class="btn btn-lg btn-block btn-outline-primary">Select</button>
+                        </form>
+                    </div>
+                </div>
             </div>
-        </div>
     <?php
         }?>
     </div>
@@ -64,7 +64,8 @@
     </select>
 </form>
 -->
-        </h3>
+    </h3>
+<script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.4.0.min.js" type= "text/javascript"></script>
         <div class="page-footer">
             <?php include 'footer.php';?>
         </div>

@@ -9,5 +9,8 @@
             </p>
 </div>
 </center>
+
+<script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.4.0.min.js" type= "text/javascript"></script>
+<script src="js/animation.js"></script>
     </body>
 </html>
