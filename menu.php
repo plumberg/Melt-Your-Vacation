@@ -5,10 +5,21 @@
   <nav class="my-2 my-md-0 mr-md-3">
     <a class="p-2 text-dark" href="#">About</a>
     <a class="p-2 text-dark" href="services.php">Services</a>
-    <a class="p-2 text-dark" href="#">Clients</a>
     <a class="p-2 text-dark" href="contact_email.php">Contact Us</a>
+    <a class="p-2 text-dark" href="cart.php">My Schedule</a>
   </nav>
-  <a class="btn btn-outline-primary" href="contact_login.php">Log In</a>
+
+  <?php
+  session_start();
+  if(isset($_SESSION['name'])): ?>
+    <a class="btn btn-outline-primary" href="logout.php">Log Out</a>
+  <?php else: ?>
+    <a class="btn btn-outline-primary" href="contact_login.php">Log In</a>
+  <?php endif; ?>
+
+
+
+
 </div>
 
 <!--

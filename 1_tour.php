@@ -52,7 +52,7 @@
     while($row=$result->fetch_array(MYSQLI_ASSOC)){?>
 
         <div class="list-group">
-          <a href="#" class="list-group-item">
+          <a href="cart.php" class="list-group-item">
             <div class="d-flex w-100 justify-content-between">
               <h3 class="mb-1"><?php echo $row['T_name']?></h3>
               <small>$<?php echo $row['T_price']?></small>

@@ -24,6 +24,7 @@ and open the template in the editor.
 
 
             <?php include 'header.php';?>
+<center><h3> Welcome to your next adventure! </h3></center>
 
         <div class="page-footer">
             <?php include 'footer.php';?>

@@ -29,11 +29,6 @@
                     <input type="password" name="password" placeholder="Enter Password" class="form-control">
                 </div>
 
-                <div class="checkbox mb-3">
-                    <label>
-                        <input type="checkbox" value="remember-me"> Remember me
-                    </label>
-                </div>
                 <button class="btn btn-primary" formaction="response_to_user_login.php"
                 type="submit" name="submit" value="Enter">Sign in</button>
                 <!--<input type="submit" formaction="response_to_user_login.php" name="submit" value="Enter">-->

@@ -18,11 +18,13 @@
 
              <?php
 
-            if($_SESSION['LoggedIn'] == true) {
+     			echo $_SESSION['name'] . ' session is set';
+
+             if($_SESSION['LoggedIn'] == true){
                 //When I was retrieving data using cookie, the previous logged in user's name wasn't erased and
                 //therefore when a new user was logging in, the previous user's name occured until the page
                 //was refreshed. So here I used name stored in session to prevent that bug. I believe
-                // the old cookie should be uset if the new user logged in.
+                // the old cookie should be unset if the new user logged in.
               // echo 'Welcome, '. $_COOKIE['cookieName'].'<br>';
 
                 echo 'Welcome, ' . $_SESSION['name'].'<br>';

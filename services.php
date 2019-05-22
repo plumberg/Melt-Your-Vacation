@@ -5,9 +5,6 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="сcs/style.css">
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
-<!--    Old Bootstrap:
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
--->
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
 	<title>Services - Melt Your Vacation</title>
 </head>
@@ -25,12 +22,12 @@
 <div class = "container mt-5">
 
     <h3 class = "mb-5">Our trip categories:</h3>
-    <div class ="d-flex flex-wrap">
+    <div class ="d-flex flex-wrap justify-content-center">
         <?php $count =1; //For using images from a hard drive instead of images from a database.
         while($row=$result->fetch_array(MYSQLI_ASSOC)){?>
             <!-- The code of cards was taken from free bootstrap sample examples -->
             <!--https://getbootstrap.com/docs/4.0/utilities/spacing/-->
-            <div class ="card-deck mb-3 text-center">
+            <div class ="card-deck mb-3 text-center ">
                 <div class="card mb-4 shadow-sm">
                     <div class="card-header">
                         <h4 class="my-0 font-weight-normal"><?php echo $row['TC_desc']?> Tours</h4>

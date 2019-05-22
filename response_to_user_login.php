@@ -1,6 +1,4 @@
 <?php
-session_start();
-
 	if(isset($_POST['submit'])){
 		$_SESSION['name'] = htmlentities($_POST['name']);
 		$_SESSION['password'] = htmlentities($_POST['password']);
@@ -32,6 +30,8 @@ $row2=$resultPass->fetch_assoc();
         $_SESSION['LoggedIn'] = true;
         setcookie('cookieName', $_SESSION['name'], time() + 4800);
         }
+		
+
 }
 
 /*
@@ -45,5 +45,4 @@ $row2=$resultPass->fetch_assoc();
 
         }
  */
-?>
- <?php include 'contents_of_user_login.php';      ?>
+ include 'contents_of_user_login.php';      ?>
