@@ -40,7 +40,7 @@
 
 <?php
          require('config/db_conn.php');
-         $query = 'SELECT T_name, T_price, T_desc FROM trip where T_category_id_fk="1"';
+         $query = 'SELECT TripID, T_name, T_price, T_desc FROM trip where T_category_id_fk="1"';
          $result = $conn->query($query)or die("Last error: {$conn->error}\n");
 ?>
 
@@ -49,10 +49,10 @@
 <div class ="d-flex flex-wrap">
     <h3 class = "mb-3">Select your trip:</h3>
     <?php
-    while($row=$result->fetch_array(MYSQLI_ASSOC)){?>
-
+    while($row=$result->fetch_array(MYSQLI_ASSOC)){
+        $id = $row['TripID'];?>
         <div class="list-group">
-          <a href="cart.php" class="list-group-item">
+          <a href="cart.php?id=<?php echo $id?>;" class="list-group-item">
             <div class="d-flex w-100 justify-content-between">
               <h3 class="mb-1"><?php echo $row['T_name']?></h3>
               <small>$<?php echo $row['T_price']?></small>

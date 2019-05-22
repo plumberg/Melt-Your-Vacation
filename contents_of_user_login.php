@@ -17,9 +17,6 @@
         <h3>
 
              <?php
-
-     			echo $_SESSION['name'] . ' session is set';
-
              if($_SESSION['LoggedIn'] == true){
                 //When I was retrieving data using cookie, the previous logged in user's name wasn't erased and
                 //therefore when a new user was logging in, the previous user's name occured until the page

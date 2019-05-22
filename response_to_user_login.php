@@ -1,4 +1,5 @@
 <?php
+session_start();
 	if(isset($_POST['submit'])){
 		$_SESSION['name'] = htmlentities($_POST['name']);
 		$_SESSION['password'] = htmlentities($_POST['password']);
@@ -8,7 +9,6 @@
 
 $user = $_POST['name'];
 $pass = $_POST['password'];
-$db = 'vacation_db';
 
 require ('config/db_conn.php');
 if ($user&&$pass)
@@ -18,6 +18,7 @@ $query1 = <<<SQL
 SQL;
 $resultUser=$conn->query($query1);
 $row1=$resultUser->fetch_assoc();
+$_SESSION['userID'] = $row1['userName'];
 
 $query2  = <<<SQL
     SELECT * FROM authorizedusers WHERE password='$pass'
@@ -30,7 +31,7 @@ $row2=$resultPass->fetch_assoc();
         $_SESSION['LoggedIn'] = true;
         setcookie('cookieName', $_SESSION['name'], time() + 4800);
         }
-		
+
 
 }
 

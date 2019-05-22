@@ -10,7 +10,9 @@
   </nav>
 
   <?php
-  session_start();
+  if(!isset($_SESSION)){
+      session_start();
+  }
   if(isset($_SESSION['name'])): ?>
     <a class="btn btn-outline-primary" href="logout.php">Log Out</a>
   <?php else: ?>
