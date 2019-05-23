@@ -18,7 +18,7 @@ $query1 = <<<SQL
 SQL;
 $resultUser=$conn->query($query1);
 $row1=$resultUser->fetch_assoc();
-$_SESSION['userID'] = $row1['userName'];
+$_SESSION['userID'] = $row1['user_id'];
 
 $query2  = <<<SQL
     SELECT * FROM authorizedusers WHERE password='$pass'

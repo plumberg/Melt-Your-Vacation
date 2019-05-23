@@ -50,9 +50,10 @@
                 ?>
                 <div class="form-label-group mb-3">
                     <label>Payment method</label>
-                    <select class="custom-select custom-select-sm">
+                    <select class="custom-select custom-select-sm" name = "payment">
                     <?php while($row=$result->fetch_array(MYSQLI_ASSOC)):?>
-                            <option value="<?php $row['PM_id']?>"><?php echo $row['PM_desc']?></option>
+                            <option value="<?php $row['PM_id']?>">
+                                <?php echo $row['PM_desc']?></option>
                     <?php endwhile?>
                     </select>
                 </div>
