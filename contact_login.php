@@ -31,22 +31,16 @@
 
                 <button class="btn btn-primary" formaction="response_to_user_login.php"
                 type="submit" name="submit" value="Enter">Sign in</button>
-                <!--<input type="submit" formaction="response_to_user_login.php" name="submit" value="Enter">-->
+
+                <a href="register.php">New User?</a>
 
                 <p class="mt-5 mb-3 text-muted text-center">© MeltYourVacation, 2019</p>
             </form>
 
         </div>
-<!--
-        <form class="form-signin" method="POST" action="<//?php echo $_SERVER['PHP_SELF']; ?>">
-		<input type="text" name="name" placeholder="Enter Login">
-		<br>
-        <input type="password" name="password" placeholder="Enter Password">
-		<br>
-		<button class="btn btn-lg btn-primary" type="submit" formaction="response_to_user_login.php">Sign in</button>
-        <input type="submit" formaction="response_to_user_login.php" name="submit" value="Enter">
-    	</form>
--->
+
+
+
     <div class="page-footer">
         <?php include 'footer.php';?>
     </div>
