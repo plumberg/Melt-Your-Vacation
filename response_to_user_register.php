@@ -17,10 +17,11 @@ $paymentid = $_POST['payment'];
 require ('config/db_conn.php');
 $query ="INSERT INTO account (username,FName,LName,phone,payment_method,password)
 VALUES ('$user', '$fname', '$lname', '$phone','$paymentid','$pass');";
-
-$query ="SELECT accountID from account";
 $result=$conn->query($query);
-$row=$result->fetch_assoc();
+
+$query1 ="SELECT accountID from account where username='$user'";
+$result1=$conn->query($query1);
+$row=$result1->fetch_assoc();
 $_SESSION['userID'] = $row['accountID'];
 
 

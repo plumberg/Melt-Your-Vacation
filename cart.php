@@ -23,7 +23,7 @@ $tripId  = $_GET['id'];
 $accountID = $_SESSION['userID'];
 require('config/db_conn.php');
 $query = "INSERT INTO booking(B_date_start, B_people_amount, B_trip_id, B_acc_id)
-values " . "('$accountID','getdate()','2','$tripId')";
+values " . "('getdate()','2','$tripId','$accountID',)";
 $result=$conn->query($query);
 if ($result === TRUE) {
     echo "New record created successfully";
