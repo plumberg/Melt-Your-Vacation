@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+	<title>Authorized accounts - Melt Your Vacation</title>
+</head>
+<body>
+    <div class="d-flex flex-column flex-md-row align-items-center p-3 px-md-4 mb-3 bg-white border-bottom shadow-sm">
+      <h5 class="my-0 mr-md-auto font-weight-bold">Melt Your Vacation</h5>
+      <img src="/img/logoName.png" class="my-0 mr-md-auto"/>
+      <nav class="my-2 my-md-0 mr-md-3">
+        <a class="p-2 text-dark" href="about">About</a>
+        <a class="p-2 text-dark" href="register_authorized_node">Add User</a>
+        <a class="p-2 text-dark" href="contactus">Contact Us</a>
+      </nav>
+    </div>
+    <div class="container">
+        <br>
+        <form  class="form" method="POST">
+            <div class="text-center mb-4">
+                <h1 class="h3 mb-3 font-weight-bold">Authorized accounts:</h1>
+            </div>
+
+            <div class="form-label-group mb-3">
+                <label>Usernames:</label>
+                <% for (var i = 0; i < data.length; i++) { %>
+                    <li><%=data[i].userName %></li>
+                    <% } %>
+                </div>
+            </form>
+        </div>
+
+
+        <div class="container">
+            <br>
+            <form class="form-signin" method="POST" >
+                <div class="text-center mb-4">
+                    <h1 class="h3 mb-3 font-weight-bold">Add a new authorized account:</h1>
+                </div>
+
+                <div class="form-label-group mb-3">
+                    <label>Username</label>
+                    <input type="text" name="newName" class="form-control" placeholder="Enter Username">
+                </div>
+
+                <div class="form-label-group mb-3">
+                    <label>Password</label>
+                    <input type="password" name="newPassword" class="form-control" placeholder="Enter Password">
+                </div>
+
+                <button class="btn btn-primary"
+                type="submit" name="submit" value="Enter">Add user</button>
+
+
+                <p class="mt-5 mb-3 text-muted text-center">© MeltYourVacation, 2019</p>
+            </form>
+
+        </div>
+
+
+
+    <div class="page-footer">
+<% include ../../footer.php %>
+    </div>
