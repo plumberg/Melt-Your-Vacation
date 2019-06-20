@@ -31,7 +31,7 @@ if ($result === TRUE) {
     echo "Error: " . $result . "<br>" . $conn->error;
 }
 }else {
-    echo 'Session is not set';
+    echo 'Sorry, please log in';
 }
 ?>
 

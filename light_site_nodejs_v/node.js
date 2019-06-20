@@ -4,7 +4,8 @@ var bodyParser = require('body-parser');
 var nodemailer = require('nodemailer');
 var app = express();
 app.set('view engine', 'ejs');
-app.use( express.static('WebProject'));
+//app.use( express.static('WebProject'));
+app.use( express.static('img'));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 

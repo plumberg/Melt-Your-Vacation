@@ -3,7 +3,7 @@
   <!--<h5 class="my-0 mr-md-auto font-weight-bold">Melt Your Vacation</h5>-->
   <img src="img/logoName.png" class="my-0 mr-md-auto">
   <nav class="my-2 my-md-0 mr-md-3">
-    <a class="p-2 text-dark" href="#">About</a>
+    <a class="p-2 text-dark" href="about.php">About</a>
     <a class="p-2 text-dark" href="services.php">Services</a>
     <a class="p-2 text-dark" href="contact_email.php">Contact Us</a>
     <a class="p-2 text-dark" href="cart.php">My Schedule</a>
