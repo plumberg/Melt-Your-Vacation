@@ -103,20 +103,25 @@ con.query(queryUsernames, function (err, result, fields) {
 
 app.post('/register_authorized_node', (req, res) => {
     if (!isEmpty(req)){
-    let newUser = {
-        name : req.body.newName,
-        password : req.body.newPassword
-    };
+  var nname = req.body.newName;
+  var npass = req.body.newPassword;
         console.log("req body is not empty");
         console.log(req.body.newName);
         console.log(req.body.newPassword);
-
-    var sql = "INSERT INTO authorizedusers (password, userName) VALUES (?,?)";
-     con.query(sql,[req.body.newPassword,req.body.newName], function (err, result) {
-        if (err) throw err;
-        else
-        console.log("New record inserted");
-    });
+        con.query('SELECT * FROM authorizedusers WHERE userName = ? and password= ?',  [nname,npass],function(err,rows){
+            if (!rows.length){
+                var sql = "INSERT INTO authorizedusers (password, userName) VALUES (?,?)";
+                con.query(sql,[npass,nname], function (err, result) {
+                    if (err) throw err;
+                    else
+                    console.log("New record inserted");
+                });
+            }
+            else{
+                console.log("User already exists.");
+                return res.send("User already exists");
+            }
+        });
 
 //To update the screen list of authorised users on the same page:
   con.query(queryUsernames, function (err, result, fields) {
@@ -127,6 +132,6 @@ app.post('/register_authorized_node', (req, res) => {
       });
 }
 
-})
+});
 
 app.listen(8080, ()=>console.log('Server is running'));
